@@ -31,7 +31,7 @@ $bodyattributes = $OUTPUT->body_attributes();
 if (empty($PAGE->layout_options['noactivityheader'])) {
     $header = $PAGE->activityheader;
     $renderer = $PAGE->get_renderer('core');
-    $templatecontext['headercontent'] = $header->export_for_template($renderer);
+    $headercontent = $header->export_for_template($renderer);
 }
 
 $templatecontext = [
